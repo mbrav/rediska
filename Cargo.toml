@@ -1,25 +1,17 @@
-# DON'T EDIT THIS!
-#
-# Codecrafters relies on this file being intact to run tests successfully. Any changes
-# here will not reflect when CodeCrafters tests your code, and might even cause build
-# failures.
-#
-# DON'T EDIT THIS!
 [package]
-name = "redis-starter-rust"
+name = "rediska"
 version = "0.1.0"
-authors = ["Codecrafters <hello@codecrafters.io>"]
+authors = ["mbrav <mbrav@protonmail.com>"]
 edition = "2021"
+description = "An implementation of redis in Rust"
+readme = "README.md"
+repository = "https://github.com/mbrav/rediska"
+license-file = "LICENSE"
+categories = ["web-programming::http-server", "asynchronous"]
+keywords = ["rust", "async", "tokio", "redis"]
 
-# DON'T EDIT THIS!
-#
-# Codecrafters relies on this file being intact to run tests successfully. Any changes
-# here will not reflect when CodeCrafters tests your code, and might even cause build
-# failures.
-#
-# DON'T EDIT THIS!
 [dependencies]
-anyhow = "1.0.59"                                # error handling
-bytes = "0.5"                                    # helps manage buffers
-thiserror = "1.0.32"                             # error handling
-tokio = { version = "0.2", features = ["full"] } # async networking
+anyhow = "1.0.59"                               
+bytes = "1.2.1"                                   
+thiserror = "1.0.32"                             
+tokio = { version = "1.21.1", features = ["full"] }
